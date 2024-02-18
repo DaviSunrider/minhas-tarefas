@@ -1,24 +1,26 @@
 import Tarefa from '../Tarefa/indext'
 import { Container } from './styles'
 
+import * as enums from '../../../utils/enums/Tarefa'
+
 const tarefas = [
   {
     titulo: 'Estudar framework',
     descricao: 'Estudar o framework X para o projeto Y',
-    prioridade: 'Importante!',
-    status: 'Pendente'
+    prioridade: enums.Prioridade.IMPORTANTE,
+    status: enums.Status.PENDENTE
   },
   {
     titulo: 'Fazer tarefa',
     descricao: 'Fianalizar tarefa do módulo 20',
-    prioridade: 'Urgente!',
-    status: 'Concluído'
+    prioridade: enums.Prioridade.URGENTE,
+    status: enums.Status.CONCLUIDA
   },
   {
     titulo: 'Finalizar briefing do projeto',
     descricao: 'Enviar email',
-    prioridade: 'Importante!',
-    status: 'Pendente'
+    prioridade: enums.Prioridade.IMPORTANTE,
+    status: enums.Status.PENDENTE
   }
 ]
 
