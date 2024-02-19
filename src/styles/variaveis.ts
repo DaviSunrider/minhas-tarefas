@@ -2,5 +2,6 @@ export default {
   vernelho: '#c23616',
   verde: '#44bd32',
   amarelo: '#f0c11a',
-  amarelo2: '#e1a32a'
+  amarelo2: '#e1a32a',
+  azulEscuro: '#2c3e50'
 }

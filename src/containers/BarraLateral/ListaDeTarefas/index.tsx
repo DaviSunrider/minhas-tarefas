@@ -1,4 +1,4 @@
-import Tarefa from '../Tarefa/indext'
+import Tarefa from '../Tarefa'
 import { Container } from './styles'
 
 import * as enums from '../../../utils/enums/Tarefa'
