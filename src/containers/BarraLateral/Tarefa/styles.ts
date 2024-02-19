@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Botao } from '../../../styles'
 import variaveis from '../../../styles/variaveis'
 
 import * as enums from '../../../utils/enums/Tarefa'
@@ -22,6 +21,18 @@ function retornaCorDeFundo(props: TagProps): string {
 
   return '#ccc'
 }
+
+export const Botao = styled.button`
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: ${variaveis.azulEscuro};
+  border-radius: 8px;
+  margin-right: 8px;
+`
 
 export const Card = styled.div`
   background-color: #fcfcfc;
@@ -75,4 +86,8 @@ export const BarraAcoes = styled.div`
 
 export const BotaoCancelarRemover = styled(Botao)`
   background-color: ${variaveis.vernelho};
+`
+
+export const BotaoSalvar = styled(Botao)`
+  background-color: ${variaveis.verde};
 `
