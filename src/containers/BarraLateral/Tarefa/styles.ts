@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import variaveis from '../../../styles/variaveis'
 
 import * as enums from '../../../utils/enums/Tarefa'
+import { Botao } from '../../../styles'
 
 type TagProps = {
   prioridade?: enums.Prioridade
@@ -21,18 +22,6 @@ function retornaCorDeFundo(props: TagProps): string {
 
   return '#ccc'
 }
-
-export const Botao = styled.button`
-  font-weight: bold;
-  font-size: 12px;
-  color: #fff;
-  padding: 8px 12px;
-  border: none;
-  cursor: pointer;
-  background-color: ${variaveis.azulEscuro};
-  border-radius: 8px;
-  margin-right: 8px;
-`
 
 export const Card = styled.div`
   background-color: #fcfcfc;
